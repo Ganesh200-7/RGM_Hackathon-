@@ -739,55 +739,6 @@ export const ReelFeed: React.FC<ReelFeedProps> = ({ onAddToast }) => {
                 <span>Rewatch</span>
               </button>
             </div>
-
-            {/* Next / Previous Reel Left/Right Navigation Buttons */}
-            <div style={{ display: 'flex', gap: '12px' }}>
-              <button
-                onClick={() => switchReel(activeDemoIndex - 1, true)}
-                disabled={activeDemoIndex === 0}
-                style={{
-                  background: activeDemoIndex === 0 ? 'rgba(255,255,255,0.04)' : 'linear-gradient(135deg, #facc15 0%, #ca8a04 100%)',
-                  border: '1px solid rgba(250, 204, 21, 0.4)',
-                  color: activeDemoIndex === 0 ? 'rgba(255,255,255,0.2)' : '#000000',
-                  borderRadius: '12px',
-                  padding: '10px 18px',
-                  fontWeight: 900,
-                  fontSize: '0.82rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  cursor: activeDemoIndex === 0 ? 'not-allowed' : 'pointer',
-                  boxShadow: activeDemoIndex === 0 ? 'none' : '0 0 20px rgba(250, 204, 21, 0.4)',
-                  transition: 'all 0.2s ease'
-                }}
-                title="Previous Reel (Arrow Left)"
-              >
-                <ChevronLeft size={20} color={activeDemoIndex === 0 ? 'rgba(255,255,255,0.2)' : '#000000'} /> PREV REEL
-              </button>
-
-              <button
-                onClick={() => switchReel(activeDemoIndex + 1, true)}
-                disabled={activeDemoIndex === DEMO_REELS.length - 1}
-                style={{
-                  background: activeDemoIndex === DEMO_REELS.length - 1 ? 'rgba(255,255,255,0.04)' : 'linear-gradient(135deg, #facc15 0%, #ca8a04 100%)',
-                  border: '1px solid rgba(250, 204, 21, 0.4)',
-                  color: activeDemoIndex === DEMO_REELS.length - 1 ? 'rgba(255,255,255,0.2)' : '#000000',
-                  borderRadius: '12px',
-                  padding: '10px 18px',
-                  fontWeight: 900,
-                  fontSize: '0.82rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  cursor: activeDemoIndex === DEMO_REELS.length - 1 ? 'not-allowed' : 'pointer',
-                  boxShadow: activeDemoIndex === DEMO_REELS.length - 1 ? 'none' : '0 0 20px rgba(250, 204, 21, 0.4)',
-                  transition: 'all 0.2s ease'
-                }}
-                title="Next Reel (Arrow Right)"
-              >
-                NEXT REEL <ChevronRight size={20} color={activeDemoIndex === DEMO_REELS.length - 1 ? 'rgba(255,255,255,0.2)' : '#000000'} />
-              </button>
-            </div>
           </div>
         </div>
 
