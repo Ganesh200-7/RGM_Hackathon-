@@ -4,6 +4,10 @@
 > **Hackathon Submission** | Autonomous AI agent that transforms casual short-form content scrolling into engaging, high-value technology learning paths.
 
 ---
+## 🌐 Live Demo
+
+🚀 **Try ReelSmart AI:** [View Live Demo](https://rgm-hackathon-black.vercel.app/)
+---
 
 ## 📌 Problem Statement
 
